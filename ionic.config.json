@@ -1,0 +1,7 @@
+{
+  "name": "BGEA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
