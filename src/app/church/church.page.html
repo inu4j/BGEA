@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>
+      <img src="../../assets/2020KF.png">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>참여교회 신청하기</ion-card-title>
+      <ion-card-subtitle>2020 코리아 페스티벌은 지역교회와 함께 합니다. <br>한국의 복음화를 위한 이 사역이 참여하길 원하는 교회는 <br>아래 신청서를 작성해주시면, 연락을 드리도록 하겠습니다. 
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <form [formGroup]="churchForm" (ngSubmit)="formSubmit()">
+
+      <ion-item>
+        <ion-label position="floating" >교회명</ion-label>
+        <ion-input formControlName="name" type="text" required ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" >교단명</ion-label>
+        <ion-input formControlName="kind" type="text"   required></ion-input>
+      </ion-item>           
+      <ion-item>
+        <ion-label position="floating" >담임목사님</ion-label>
+        <ion-input formControlName="pastor" type="text"  required></ion-input>
+      </ion-item>           
+      <ion-item>
+        <ion-label position="floating" >연락처</ion-label>
+        <ion-input formControlName="phone" type="text"   required></ion-input>
+      </ion-item>           
+      <ion-item>
+        <ion-label position="floating" >주소</ion-label>
+        <ion-input formControlName="address" type="text"  required></ion-input>
+      </ion-item>           
+      <ion-item>
+        <ion-label position="floating" >홈페이지</ion-label>
+        <ion-input formControlName="url" type="text"  required></ion-input>
+      </ion-item>           
+
+      <ion-button type="submit" color="success" expand="block">참가교회 등록</ion-button>
+    </form>
+  </ion-card>
+
+
+</ion-content>

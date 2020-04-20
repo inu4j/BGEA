@@ -1,31 +1,70 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
 
 ion-content ion-toolbar {
   --background: translucent;
+}
+
+
+ion-title img{
+  width: 130px;
+}
+
+
+.dash-box{
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  color : black;  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 13px;
+    color : #777777;
+  }
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 25px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+.church_item {
+  width:32%;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+.dash-backimg {
+  background-image : url('../../assets/logoKF_back.png') ;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  max-height: 400px;
+  min-height: 200px;
+  width: 100%;
+  z-index: 1;
+  border: 0px !important;
+}
+
+@media screen and (min-width: 768px) {
+  h3{
+    font-size: 20px;
+  }
+  .church_item {
+    width:32%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
 }

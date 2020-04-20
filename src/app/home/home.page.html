@@ -1,20 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-header  [translucent]="true" >
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+        <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      <ion-title>
+        <img src="../../assets/2020KF.png">
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+
+    <video controls="controls" style="width: 100%;" preload="metadata"  webkit-playsinline="webkit-playsinline" class="videoPlayer" poster="../../assets/video/video.jpg">
+      <source src="../../assets/video/video.mp4" type="video/mp4" />
+     </video>
+
+  <div class="dash-box dash-backimg">
+
+    <h2 style="color : #ef4739">| ABOUT US |</h2>
+    <p>페스티벌(전도협회) 개최를 원하는 지역 교회는 빌리그래함 전도협회를 그 도시에 초대합니다. 가장 중요한 핵심가치는 페스티벌의 처음부터 마지막까지 지역 교회가 중심이 된다는 것입니다. 지역 교회는 페스티벌 협력교회가 되어 페스티벌 준비, 페스티벌, 그리고 페스티벌 이후의 모든 과정에 참여할 수 있도록 인적자원을 제공합니다. 이로써 지역 교회는 새 신자들을 받아들이고 성장하도록 돕는 일을 통해 놀라운 기쁨과 축복을 얻게 됩니다.</p>
+
+    <h2  style="color: #4267b0">| PURPOSE |</h2>
+    <p>개최 도시를 중심으로 지역 교회가 연합될 수 있도록 돕고, 최대한 많은 성도를 동원하여 세상 사람들에게 “예수는 길이요, 진리요, 생명” 이라는 복음을 전합니다. 또한 그들에게 복음에 대해 물어볼 수 있는 기회를 제공하며 개별적인 신앙적 교제를 통하여 가까운 지역 교회로 연결되어 신앙 양육을 받도록 하는 것이 페스티벌의 목적입니다.  </p>  
+        
+    <ion-button color="dark" shape="round" size="small" (click)="click_url('https://www.2020koreafestival.or.kr/')">
+     2020 코리아페스티벌 홈페이지
+    </ion-button>
+
   </div>
+
+<ion-card>
+
+  <ion-card-content>
+    <h3><b>참여교회</b>  <span style="margin-left:10px;color:#797979; font-size: 10px;">(현재 : {{churchCount}}개 교회)</span></h3>
+    <hr>
+    <ion-button class="church_item" size="small" color="light" *ngFor="let c of churchData">
+      {{c.name}}
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
 </ion-content>

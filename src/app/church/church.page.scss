@@ -1,0 +1,28 @@
+ion-title img{
+    width: 130px;
+  }
+
+ion-item ion-label{
+    font-size: 10px;
+    color : #cf4c0f;
+}
+
+ion-card-header{
+    text-align: center;
+}
+ion-button{
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    ion-item ion-label{
+        font-size: 15px;
+    }
+    ion-button{
+        margin: 20px;
+    }
+    
+
+}
+

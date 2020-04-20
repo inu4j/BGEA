@@ -1,0 +1,64 @@
+
+
+  ion-content{
+    position: relative;
+    vertical-align: middle;
+  }
+  ion-footer{
+    position: absolute;
+    padding : 10px;
+  
+    bottom:0px;
+
+  }
+
+  .modal-content{
+    padding : 20px;
+    height: 100hv;
+
+  }
+  .modal-content h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .modal-content h4{
+    font-size: 16px;
+    font-weight: bold;
+    color : rgb(156, 6, 6);
+  }
+
+  .modal-content p{
+      border-top: 1px solid gray;
+      padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+      .modal-content{
+        padding : 30px;    
+      }
+      .modal-content h3{
+        font-size: 35px;
+        font-weight: bold;
+      }
+    
+      .modal-content h4{
+        font-size: 24px;
+        font-weight: bold;
+        color : rgb(156, 6, 6);
+      }
+    
+      .modal-content p{
+          border-top: 1px solid gray;
+          padding-top: 10px;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        }
+      
+    
+    }

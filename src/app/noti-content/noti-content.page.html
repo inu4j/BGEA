@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title>
+      <img src="../../assets/2020KF.png"> 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+  <ion-header >
+    <ion-toolbar>
+      <ion-title>내용보기</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngFor="let product of data">
+    <img src="{{product.img_url}}" />
+    <ion-card-header>
+      <ion-card-subtitle>{{product.kortime}}</ion-card-subtitle>
+      <ion-card-title style="color:black">{{product.title}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div innerHTML="{{product.bodyhtml}}"></div>
+      <!-- <p [innerHTML]="{{product.body}}"></p> -->
+      <ion-button expand="block" color="dark" (click)="open_link(product.linkaddress)" *ngIf="product.linkbtn">{{product.linkbtn}}</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

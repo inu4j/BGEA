@@ -1,7 +1,9 @@
 {
   "name": "BGEA",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "id": "1bb07420"
 }
